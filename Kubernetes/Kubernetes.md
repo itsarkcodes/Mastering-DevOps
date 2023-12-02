@@ -54,3 +54,8 @@
 # Master vs Worker Node
 - Here we will see how are the components are distributed across types of server
 - ![image](https://github.com/itsarkcodes/Mastering-DevOps/assets/87442305/47b4f4b8-b9d3-4661-b9b4-684a3098f1e7)
+
+# Kubectl: Tool to manage and deploy application in K8 cluster and other things
+- ```kubectl run``` : Deploy application
+- ```kubectl cluster-info```: Info about cluster
+- ```kubectl get nodes```: List all nodes 
