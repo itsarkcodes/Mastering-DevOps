@@ -18,7 +18,7 @@ spec:  # spec: Describes the pod's specification, including the containers runni
 Eg:
 ![image](https://github.com/itsarkcodes/Mastering-DevOps/assets/87442305/979318ad-0ec4-4490-af82-307b111608eb)
 
-- Once the file is created we can run the below commands
-```kubectl create -f filename.yaml```: Creates a pod from the specified YAML file.
-```kubectl describe pods <pod_name>```: Provides detailed information about a specific pod.
-```kubectl get pods```: Lists all pods in the current namespace.
+### Once the file is created we can run the below commands
+- ```kubectl create -f filename.yaml```: Creates a pod from the specified YAML file.  
+- ```kubectl describe pods <pod_name>```: Provides detailed information about a specific pod.  
+- ```kubectl get pods```: Lists all pods in the current namespace.
