@@ -56,3 +56,21 @@ spec:
   replicas: 3
 ```
 - ```template```: Describes the pod template that the ReplicationController will use to create new pods.
+
+
+# How to Scale replicaset?
+- You started with 3 replicas but now you want it to have 6
+1. Change the replicas in file and Run replace command  
+- ```kubectl replace -f replicaset-file.yml```
+2. Run scale command (This will not update the file)  
+- ```kubectl scale --replicas=6 -f replicaset-file.yml```  
+OR  
+- ```kubectl scale --replicas=6 replicaset rs-myapp``` Definition file will still have 3
+3. You can scale it automatically depending on load (Advance)
+
+# Commands
+1. Create replicaset: ```kubectl create -f file.yml```
+2. Get replicaset: ```kubectl get replicaset```
+3. Delete: ```kubectl delete replicaset rs-myapp``` (Also deletes all underlying POD's)
+4. Replace the changes: ```kubectl replace -f replicaset-file.yml```
+5. Scale (without modifying the file): ```kubectl scale --replicas=6 -f replicaset-file.yml```
