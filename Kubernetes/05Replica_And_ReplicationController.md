@@ -1,5 +1,7 @@
 # Replica Set [New, Recommended]
 - ReplicaSets are the next-generation version of Replication Controllers. They are more flexible and offer richer pod selection mechanisms.
+- Allows more expressive label-based selectors, offering greater flexibility in identifying pods.
+- Enables rolling updates and more sophisticated deployment strategies compared to Replication Controllers.
 - Example:
 ```yaml
 apiVersion: v1
