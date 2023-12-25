@@ -38,3 +38,8 @@
 > - Dedicated Instance does not work like this. Your instance runs on some dedicated hardware. Its not lockdown to you. If you stop/start instance, you can get some other hardware somewhere else. Basically, the hardware is "yours" (you are not sharing it with others) for the time your instance is running. You stop/start it, you may get different physical machine later on (maybe older, maybe newer, maybe its specs will be a bit different), and so on. So your instance is moved around on different physical servers - whichever is not occupied by others at the time.  
 > - With Dedicated Host the physical server is basically yours. It does not change, it's always the same physical machine for as long as you are paying.
 
+**EC2 Capacity Reservations**
+- Ensure you have the available capacity in an AZ to launch EC2 instances when needed
+- No time commitment, No billing discount
+- Charged at On-Demand rate whether you run instance or not
+- Good for short term, uninterrupted workloads in specific AZ
