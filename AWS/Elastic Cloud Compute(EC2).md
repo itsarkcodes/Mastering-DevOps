@@ -43,3 +43,20 @@
 - No time commitment, No billing discount
 - Charged at On-Demand rate whether you run instance or not
 - Good for short term, uninterrupted workloads in specific AZ
+
+## EC2 Spot Instance 
+- **One-time:** Request once opened, spins up the spot instances and the request closes.
+- **Persistent:**
+  - Request will stay disabled while the spot instances are up and running.
+  - It becomes active after the spot instance is interrupted.
+  - If you stop the spot instance, the request will become active only after you start the spot instance.
+- You can only cancel spot instance requests that are open, active, or disabled.
+- Cancelling a Spot Request does not terminate instances. You must first cancel a Spot Request, and then terminate the associated Spot Instances.
+
+## EC2 Spot Fleets
+- Combination of spot and on-demand instances (optional) that tries to optimize for cost or capacity
+- Launch Templates must be used to have on-demand instances in the fleet
+- Strategies to allocate Spot Instances:
+  - lowestPrice - from the pool with the lowest price (cost optimization, short workload)
+  - diversified - distributed across all pools (great for availability, long workloads)
+  - capacityOptimized - pool with the optimal capacity for the number of instances
